@@ -1,4 +1,4 @@
-# APCE structural reliability examples — MATLAB package
+# APCE structural reliability examples
 
 This package reproduces the six numerical examples in Lim and Manuel (2021),
 *Distribution-Free Polynomial Chaos Expansion Surrogate Models for Efficient
@@ -72,10 +72,9 @@ Moment samples are unlabeled and do not require truth-model calls.
 - APCE tail estimates are Monte Carlo quantities. Small numerical differences
   across MATLAB releases are expected; the random seeds are fixed.
 
-## References and provenance
+## References
 
-The primary paper DOI is <https://doi.org/10.1016/j.ress.2020.107256>. The
-authors' public APCE implementation is at
-<https://github.com/hyeonguklim/aPCE>; the offshore dataset and executable are
-from <https://github.com/hyeonguklim/longterm-extreme>. Their MIT licenses are
-included under `licenses/`.
+- The primary paper DOI is <https://doi.org/10.1016/j.ress.2020.107256>.
+- The authors' APCE implementation (simpler version for independent variables) is at <https://github.com/hyeonguklim/aPCE>
+- The offshore dataset and executable are from <https://github.com/hyeonguklim/longterm-extreme>.
+- Their MIT licenses are included under `licenses/`.
