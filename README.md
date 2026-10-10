@@ -49,7 +49,7 @@ run_tests('full')   % also runs every example in quick mode
 ## Method implemented
 
 For all total-degree monomials through order `p`, the code estimates the joint
-raw-moment Gram matrix from unlabeled input samples. A Cholesky form of
+raw-moment Gram-Schmidt matrix from unlabeled input samples. A Cholesky form of
 Gram–Schmidt creates an empirical orthonormal basis, and ordinary least squares
 fits the APCE coefficients to the expensive truth-model evaluations. Inputs
 are centered and scaled before moment construction for numerical stability;
@@ -78,3 +78,7 @@ Moment samples are unlabeled and do not require truth-model calls.
 - The authors' APCE implementation (simpler version for independent variables) is at <https://github.com/hyeonguklim/aPCE>
 - The offshore dataset and executable are from <https://github.com/hyeonguklim/longterm-extreme>.
 - Their MIT licenses are included under `licenses/`.
+
+## Contact
+
+For any questions or comments, please email me at: hyeonguklim@gmail.com.
