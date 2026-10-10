@@ -1,0 +1,19 @@
+function options = paperOptions(mode)
+%PAPEROPTIONS Reproducible quick and paper-scale run configurations.
+if nargin == 0, mode = 'quick'; end
+mode = lower(char(mode));
+switch mode
+    case 'quick'
+        options = struct('mode',mode, 'momentSamples',25000, ...
+            'strengthReplicates',10, 'strengthMCS',20000, ...
+            'serviceReplicates',3, 'serviceMCS',200000, ...
+            'basis',struct('chunkSize',25000,'regularization',1e-12));
+    case 'paper'
+        options = struct('mode',mode, 'momentSamples',200000, ...
+            'strengthReplicates',100, 'strengthMCS',100000, ...
+            'serviceReplicates',10, 'serviceMCS',1000000, ...
+            'basis',struct('chunkSize',25000,'regularization',1e-12));
+    otherwise
+        error('apce:UnknownMode','Mode must be ''quick'' or ''paper''.');
+end
+end
